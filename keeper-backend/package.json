@@ -2,7 +2,7 @@
   "name": "keeper-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js.js",
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"

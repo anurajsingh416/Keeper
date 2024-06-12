@@ -19,6 +19,7 @@ function Home() {
     title: "",
     content: "",
   });
+  const [revealNotes, setReveal] = useState(true);
   const [isSearching, setIsSearching] = useState(false);
   const [showCard, setShowCard] = useState(false);
   const [searchResults, setSearchResults] = useState([]);
@@ -140,7 +141,9 @@ function Home() {
   },[]);
   
   function showProfileCard() {
-    showCard ? setShowCard(false) : setShowCard(true);
+    setShowCard(!showCard);
+    setReveal(!revealNotes);
+
   }
   return (
     <div className="container">
@@ -154,7 +157,7 @@ function Home() {
       />
 
       {(searchResults.length > 0 ? searchResults : notes).map((note, index) => (
-        <Note
+        revealNotes && <Note
           key={index}
           id={note._id}
           title={note.title}

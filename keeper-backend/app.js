@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-// const mongoose = require('./config/db');
+const mongoose = require('./config/db');
 const jwt = require("jsonwebtoken");
 // const User = require("./model/User");
 // const Note = require("./model/Note");

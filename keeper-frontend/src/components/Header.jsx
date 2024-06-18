@@ -22,7 +22,7 @@ function Header({onToggle,onShow}){
             }}>
                 <MdOutlineAccountCircle title="Profile" fontSize={"25px"}/>
             </button>
-            <button style={{color:"#e8151587",background:"none",border:"none",outline:"none"}} onClick={handleLogout}>
+            <button style={{color:"#ff0000c9",background:"none",border:"none",outline:"none"}} onClick={handleLogout}>
             <MdLogout title="Logout" fontSize="30px"/>
             </button>
             </div>

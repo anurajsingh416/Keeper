@@ -6,9 +6,9 @@
   "scripts": {
     "install-server": "cd keeper-backend && npm install",
     "start-server": "cd keeper-backend && npm start",
-    "install-client": "cd keeper-client && npm install",
-    "build-client": "cd keeper-client && npm run build",
-    "start-client": "cd keeper-client && npm run dev" 
+    "install-client": "cd keeper-frontend && npm install",
+    "build-client": "cd keeper-frontend && npm run build",
+    "start-client": "cd keeper-frontend && npm run dev" 
   },
   "keywords": [],
   "author": "",

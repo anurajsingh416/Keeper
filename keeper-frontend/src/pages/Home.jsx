@@ -23,17 +23,7 @@ function Home() {
   const [isSearching, setIsSearching] = useState(false);
   const [showCard, setShowCard] = useState(false);
   const [searchResults, setSearchResults] = useState([]);
-  const colors = [
-    "#55efc4",
-    "#81ecec",
-    "#74b9ff",
-    "#a29bfe",
-    "#ffeaa7",
-    "#fab1a0",
-    "#ff7675",
-    "#fdcb6e",
-    "#ff7675",
-  ];
+  
 
   async function handleAdd(inputArea) {
     if (isEditing) {
@@ -165,7 +155,6 @@ function Home() {
           content={note.content}
           onDelete={handleDelete}
           onUpdate={handleEdit}
-          color={colors[index % colors.length]}
         />
       ))}
       {notes.length === 0 && <NoNotes />}

@@ -1,6 +1,6 @@
 import axios from "axios"
 const axiosInstance = axios.create({
-    baseURL: 'https://keeper-backend-steel.vercel.app',
+    baseURL: 'https://keeper-backend-mu.vercel.app/',
     timeout: 10000,
     headers: {
         "Content-Type":"application/json"

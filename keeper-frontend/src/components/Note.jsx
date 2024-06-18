@@ -2,16 +2,14 @@ import { useState } from "react";
 import {MdDelete, MdModeEdit} from "react-icons/md";
 
 
-function Note({id,title,date,content,onDelete,onUpdate,color}){
+function Note({id,title,date,content,onDelete,onUpdate}){
     const [showMore, setShowMore] = useState(false);
     const text = content;
     const trimmedContent = showMore ? content : text.slice(0,100);
-    const noteStyle = {
-        backgroundColor:color
-    }
+    
     
     return (
-        <div className="note" style={noteStyle}>
+        <div className="note">
             <h1>{title} </h1>
             <span id="date">{date}</span> 
             <p>{trimmedContent}</p>

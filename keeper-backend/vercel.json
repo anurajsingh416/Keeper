@@ -3,14 +3,14 @@
     "name":"Keeper-App",
     "builds": [
         {
-            "src":"*.js",
+            "src":"app.js",
             "use":"@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/"
+            "dest": "/app.js"
         }
     ]
 }

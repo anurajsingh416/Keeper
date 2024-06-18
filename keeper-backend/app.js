@@ -1,11 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongoose = require('./config/db');
+// const mongoose = require('./config/db');
 const jwt = require("jsonwebtoken");
-const User = require("./model/User");
-const Note = require("./model/Note");
+// const User = require("./model/User");
+// const Note = require("./model/Note");
 const bcrypt = require("bcrypt");
-const authenticationToken = require("./utilities/authenticationToken");
+// const authenticationToken = require("./utilities/authenticationToken");
 require("dotenv").config();
 const cors = require('cors');
 const PORT = 3000;
